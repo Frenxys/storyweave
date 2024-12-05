@@ -179,3 +179,10 @@ a:hover {
 .contact button:hover {
   background-color: #34495e;
 }
+
+.success-message {
+  color: #28a745; 
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
