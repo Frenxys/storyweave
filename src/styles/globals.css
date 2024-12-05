@@ -11,7 +11,8 @@ html, body {
   font-family: 'Inter', sans-serif;
   background-color: #f4f4f9;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 /* Next.js Root Container */
@@ -23,102 +24,115 @@ html, body {
 
 /* Header */
 header {
-  background-color: #2c3e50;
+  background-color: #1e2a38;
   color: #fff;
   padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header nav {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 header a {
-  color: #fff;
+  color: #f9f9f9;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 header a:hover {
-  text-decoration: underline;
+  color: #1abc9c;
+  text-decoration: none;
 }
 
 /* Main Content */
 main {
   flex: 1;
-  padding: 2rem 1rem;
+  padding: 3rem 1.5rem;
+  background-color: #f8f9fa;
 }
-
-
 
 /* Typography */
 h1, h2, h3 {
-  color: #2c3e50;
+  color: #34495e;
   margin-bottom: 1rem;
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 a {
-  color: #0070f3;
+  color: #1abc9c;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #16a085;
   text-decoration: underline;
 }
 
 /* Utility */
 .container {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Blog Post Card */
 .card {
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  border: 1px solid #e3e6e8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
   margin-bottom: 1.5rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
 }
 
 .card p {
-  margin-bottom: 1rem;
-  color: #666;
+  margin-bottom: 1.2rem;
+  color: #555;
 }
 
 .card a {
-  color: #0070f3;
+  color: #1abc9c;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+.card a:hover {
+  color: #16a085;
+}
+
+/* About Section */
 .about h1 {
-  color: #2c3e50;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  color: #34495e;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .about p {
   margin-bottom: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .about ul {
@@ -127,24 +141,25 @@ a:hover {
 }
 
 .about ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
+/* Contact Section */
 .contact h1 {
-  color: #2c3e50;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  color: #34495e;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact p {
   margin-bottom: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .contact form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .contact .form-group {
@@ -161,28 +176,36 @@ a:hover {
 .contact textarea {
   padding: 0.8rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #ccd1d6;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.contact input:focus, 
+.contact textarea:focus {
+  border-color: #1abc9c;
+  outline: none;
 }
 
 .contact button {
   padding: 0.8rem;
-  font-size: 1rem;
-  background-color: #2c3e50;
+  font-size: 1.1rem;
+  background-color: #1abc9c;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
-  background-color: #34495e;
+  background-color: #16a085;
 }
 
 .success-message {
-  color: #28a745; 
-  font-size: 1.2rem;
+  color: #2ecc71; 
+  font-size: 1.3rem;
   margin-top: 1rem;
   font-weight: bold;
+  text-align: center;
 }
